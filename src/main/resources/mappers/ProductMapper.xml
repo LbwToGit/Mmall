@@ -189,10 +189,10 @@
       from mmall_product
       <where>
         <if test="productName != null">
-            and productName=#{productName}
+            and name like #{productName}
         </if>
         <if test="productId != null">
-            and productId=#{productId}
+            and id=#{productId}
         </if>
       </where>
   </select>
